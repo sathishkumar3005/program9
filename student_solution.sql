@@ -1,7 +1,4 @@
-USE departmentDB;
-
-DROP TABLE IF EXISTS Student;
-DROP TABLE IF EXISTS Department;
+USE CollegeDB;
 
 CREATE TABLE Department (
     DepartmentID INT,
@@ -29,4 +26,4 @@ SELECT Student.StudentName,
        Department.DepartmentName
 FROM Student
 INNER JOIN Department
-ON Student.DepartmentID = Department.DepartmentID;
+    ON Student.DepartmentID = Department.DepartmentID;
